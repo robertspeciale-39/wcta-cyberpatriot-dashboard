@@ -1,0 +1,17 @@
+name = "wcta-cyberpatriot-dashboard"
+main = "worker/index.js"
+compatibility_date = "2024-01-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "wcta-cyberpatriot"
+database_id = "YOUR_D1_DATABASE_ID"
+
+[build]
+command = "npm run build"
+
+[site]
+bucket = "./dist"
+
+[vars]
+ENVIRONMENT = "production"
